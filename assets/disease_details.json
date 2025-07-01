@@ -28,17 +28,17 @@
     "plant": "Maize",
     "diagnose": [
       {
-        "name": "Rust",
+        "name": "Common_Rust",
         "class": "Fungus",
         "description": "Rust in corn is caused by the fungus Puccinia sorghi. It appears as small, reddish-brown pustules on leaves and stalks which can coalesce and cause significant leaf damage reducing photosynthetic capacity and yield."
       },
       {
-        "name": "Gray Leaf",
+        "name": "Gray_Leaf_Spot",
         "class": "Fungus",
         "description": "Gray Leaf Spot is caused by the fungus Mycosphaerella graminicola. It produces rectangular, grayish lesions on leaves which can merge to form large necrotic areas reducing the photosynthetic area and affecting yield."
       },
       {
-        "name": "Blight",
+        "name": "Northern_Leaf_Blight",
         "class": "Fungus",
         "description": "Blight in corn often referred to as Northern Corn Leaf Blight which is caused by the fungus Exserohilum turcicum. It manifests as long, elliptical grayish-green lesions on the leaves which can merge to cause extensive leaf damage."
       },

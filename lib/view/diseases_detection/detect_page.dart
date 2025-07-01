@@ -55,10 +55,10 @@ class _DetectPageState extends State<DetectPage> {
   }
 
   loadModel() async {
-    String modelPath = cornDiseaseModel;
-    String labelPath = cornDiseasetxt;
-    // String modelPath = maizeDiseasesModel;
-    // String labelPath = maizeDiseasestxt;
+    // String modelPath = cornDiseaseModel;
+    // String labelPath = cornDiseasetxt;
+    String modelPath = maizeDiseasesModel;
+    String labelPath = maizeDiseasestxt;
 
     try {
       // Load the model

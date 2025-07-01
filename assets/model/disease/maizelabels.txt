@@ -1,0 +1,4 @@
+Common_Rust
+Gray_Leaf_Spot
+Healthy
+Northern_Leaf_Blight

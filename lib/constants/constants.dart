@@ -9,10 +9,9 @@ const String weatherAPIEndPoint = '/forecast.json';
 
 // Gemini API Configuration
 const String geminiAPIKey =
-    'AIzaSyAhn6EvgCPWag5KHZHggNW1AS5LmVT9ul8'; // Replace with your actual Gemini API key
-const String geminiAPIBaseURL =
-    'https://generativelanguage.googleapis.com/v1beta';
-const String geminiAPIEndPoint = '/models/gemini-pro:generateContent';
+    'AIzaSyDJjfNgHQRBvIcyDqe-43EAKSIOyAT_kbw'; // Replace with your actual Gemini API key
+const String geminiAPIBaseURL = 'https://generativelanguage.googleapis.com/v1';
+const String geminiAPIEndPoint = '/models/gemini-1.5-flash:generateContent';
 
 //https://newsapi.org/v2/everything?q=farmers&sortBy=popularity&apiKey=e13c1810209a4e6ca7997d39b797152c
 
@@ -38,5 +37,5 @@ String cottonDiseasetxt = "assets/model/disease/cottonlabels.txt";
 String plantHealthModel = "assets/model/disease/plant_health.tflite";
 String plantHealthtxt = "assets/model/disease/plant_health_labels.txt";
 
-String maizeDiseasesModel = 'assets/model/disease/maize_disease_model.tflite';
-String maizeDiseasestxt = 'assets/model/disease/maize_disease_labels.txt';
+String maizeDiseasesModel = 'assets/model/disease/maize.tflite';
+String maizeDiseasestxt = 'assets/model/disease/maizelabels.txt';
