@@ -7,9 +7,10 @@ const String weatherAPIKey = '73f49df9790a4edabce175946242105';
 const String weatherAPIBaseURL = 'https://api.weatherapi.com/v1';
 const String weatherAPIEndPoint = '/forecast.json';
 
-// Gemini API Configuration
+// Gemini API Configuration 
 const String geminiAPIKey =
     'AIzaSyDJjfNgHQRBvIcyDqe-43EAKSIOyAT_kbw'; // Replace with your actual Gemini API key
+    // AIzaSyCtsQRSpka6MpxrdwaKIrrnBnFqcO7ghI0
 const String geminiAPIBaseURL = 'https://generativelanguage.googleapis.com/v1';
 const String geminiAPIEndPoint = '/models/gemini-1.5-flash:generateContent';
 

@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:digifarmer/models/news_model.dart';
 import 'package:digifarmer/services/news_service.dart';
 import 'package:flutter/material.dart';
@@ -8,8 +10,11 @@ class NewsProvider extends ChangeNotifier {
   final List newsJson = [];
   NewsService newsService = NewsService();
   Future<void> getNews(int page) async {
+    _isLoading = true;
+    notifyListeners();
+    log('Fetching news for page:');
     final result = await newsService.fetchNews(1);
-
+log('News fetched: ${result['articles'].length} articles');
     result['articles'].forEach((value) {
       newsJson.add(value);
       _news.add(NewsModel(

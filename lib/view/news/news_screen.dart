@@ -64,6 +64,8 @@ class _NewsPageState extends State<NewsPage> {
               final newsList = newsProvider.newsJson;
               return networkProvider.status == InternetStatus.disconnected
                   ? const NoInternetWidget()
+                  : newsProvider.dataLoading
+                  ? const Center(child: CircularProgressIndicator())
                   : ListView.builder(
                     physics: const BouncingScrollPhysics(),
                     controller: paginationScrollController.scrollController,

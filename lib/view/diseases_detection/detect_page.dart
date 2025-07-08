@@ -93,7 +93,8 @@ class _DetectPageState extends State<DetectPage> {
 
     try {
       LoadingOverlay().show(context);
-      // Load and preprocess the image
+
+      // Load and decode image
       final imageBytes = await image.readAsBytes();
       final decodedImage = img.decodeImage(imageBytes);
 
@@ -102,73 +103,67 @@ class _DetectPageState extends State<DetectPage> {
         return;
       }
 
-      // Resize image to expected input size (assuming 224x224, adjust as needed)
+      // Resize to 224x224
       final resizedImage = img.copyResize(
         decodedImage,
         width: 224,
         height: 224,
       );
 
-      // Convert to Float32List and normalize
+      // Normalize to [-1, 1] (as per MobileNetV2 preprocess_input)
       final input = Float32List(1 * 224 * 224 * 3);
       int pixelIndex = 0;
-
       for (int y = 0; y < 224; y++) {
         for (int x = 0; x < 224; x++) {
           final pixel = resizedImage.getPixel(x, y);
-          input[pixelIndex++] = (pixel.r / 255.0);
-          input[pixelIndex++] = (pixel.g / 255.0);
-          input[pixelIndex++] = (pixel.b / 255.0);
+          input[pixelIndex++] = (pixel.r / 127.5) - 1.0;
+          input[pixelIndex++] = (pixel.g / 127.5) - 1.0;
+          input[pixelIndex++] = (pixel.b / 127.5) - 1.0;
         }
       }
 
-      // Reshape input for model
       final inputBuffer = input.reshape([1, 224, 224, 3]);
-
-      // Prepare output buffer
       final outputBuffer = Float32List(
         labels!.length,
       ).reshape([1, labels!.length]);
 
       // Run inference
       interpreter!.run(inputBuffer, outputBuffer);
-
-      // Get results
       final results = outputBuffer[0];
+
+      // Debug: print all scores
+      for (int i = 0; i < results.length; i++) {
+        log('${labels![i]}: ${results[i].toStringAsFixed(4)}');
+      }
+
+      // Get the predicted class
       double maxScore = results[0];
       int maxIndex = 0;
-
       for (int i = 1; i < results.length; i++) {
-        print('score: ${results[i]} for index: $i');
         if (results[i] > maxScore) {
           maxScore = results[i];
           maxIndex = i;
         }
       }
 
-      print('Predicted index: $maxIndex, Score: $maxScore');
-
       String predictedLabel = labels![maxIndex];
+      log(
+        'Predicted label: $predictedLabel (Score: ${maxScore.toStringAsFixed(4)})',
+      );
 
-      // Store results for Gemini analysis
+      // Store for Gemini analysis
       lastProbabilityScores = List<double>.from(results);
       lastPredictedLabel = predictedLabel;
 
-      // Update provider and display result
-      Provider.of<DetectionProvider>(
-        context,
-        listen: false,
-      ).getDetectionDetail(widget.title, predictedLabel);
-
-      // Store the detected class from provider
+      // Update DetectionProvider
       final detectionProvider = Provider.of<DetectionProvider>(
         context,
         listen: false,
       );
+      detectionProvider.getDetectionDetail(widget.title, predictedLabel);
       lastDetectedClass = detectionProvider.classDetection;
 
       LoadingOverlay().hide();
-
       displayResult(predictedLabel);
     } catch (e) {
       LoadingOverlay().hide();
