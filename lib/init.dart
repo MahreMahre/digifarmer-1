@@ -68,16 +68,14 @@ class _InitState extends State<Init> {
     final NewsProvider newsProvider = context.read<NewsProvider>();
     final NetworkCheckerProvider networkCheckerProvider =
         context.read<NetworkCheckerProvider>();
-    final AlertProvider alertProvider =
-        context.read<AlertProvider>();
+    final AlertProvider alertProvider = context.read<AlertProvider>();
     DiseasesDetailService.loadJson();
 
     myappProvider.loadThemeMode();
     networkCheckerProvider.listenNetwork(() {
       weatherProvider.getWeather();
-      newsProvider.getNews(1);
       alertProvider.getAlerts();
-
+      newsProvider.getNews(1);
     });
     await preCacheImage(context);
   }

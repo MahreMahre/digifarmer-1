@@ -92,10 +92,10 @@ class AppThemeGreen {
       backgroundColor: Colors.white,
     ),
     //TabBar
-    tabBarTheme: const TabBarTheme(
-      labelColor: Colors.black,
-      unselectedLabelColor: Color(0xFFAFB8BF),
-    ),
+    // tabBarTheme: const TabBarTheme(
+    //   labelColor: Colors.black,
+    //   unselectedLabelColor: Color(0xFFAFB8BF),
+    // ),
     //Bounce wave color
     primarySwatch: const MaterialColor(0xFF545454, {
       50: Color(0xFF545454),
