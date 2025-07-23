@@ -81,6 +81,7 @@ class _DetectPageState extends State<DetectPage> {
     if (image == null) return;
 
     File imageFile = File(image.path);
+    // displayNonLeafError(); // Show error for non-leaf image
 
     classifyImage(imageFile);
   }
@@ -96,6 +97,25 @@ class _DetectPageState extends State<DetectPage> {
 
       // Load and decode image
       final imageBytes = await image.readAsBytes();
+
+      // First validate if the image contains a leaf using Gemini
+      final geminiProvider = Provider.of<GeminiProvider>(
+        context,
+        listen: false,
+      );
+      log('Validating if image contains a leaf');
+      final isLeafResult = await geminiProvider.validateImageContainsLeaf(
+        imageBytes,
+      );
+
+      if (!isLeafResult) {
+        LoadingOverlay().hide();
+        log('Image does not contain a leaf');
+        displayNonLeafError(); // Show error for non-leaf image
+        return;
+      }
+
+      log('Leaf detected, proceeding with disease classification');
       final decodedImage = img.decodeImage(imageBytes);
 
       if (decodedImage == null) {
@@ -356,6 +376,124 @@ class _DetectPageState extends State<DetectPage> {
       classLabels: labels!,
       probabilityScores: lastProbabilityScores!,
       detectedClass: detectedClass,
+    );
+  }
+
+  void displayNonLeafError() {
+    showModalBottomSheet(
+      isScrollControlled: true,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(20.r),
+          topRight: Radius.circular(20.r),
+        ),
+      ),
+      isDismissible: true,
+      context: context,
+      builder: (context) {
+        return Container(
+          height: 350.h,
+          decoration: BoxDecoration(
+            color: Colors.transparent,
+            borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(20.r),
+              topRight: Radius.circular(20.r),
+            ),
+            border: Border.all(color: const Color(0xFFE05D35), width: 3.w),
+          ),
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 15.h),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.pop(context);
+                      },
+                      child: Container(
+                        margin: EdgeInsets.only(right: 5.w, top: 5.h),
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          border: Border.all(
+                            color: const Color(0xFFE05D35),
+                            width: 2.w,
+                          ),
+                        ),
+                        child: Icon(
+                          Remix.close_line,
+                          size: 30.sp,
+                          color: const Color(0xFFD63F25),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(height: 10.h),
+                Icon(
+                  Remix.error_warning_fill,
+                  size: 60.sp,
+                  color: Colors.red.shade700,
+                ),
+                SizedBox(height: 15.h),
+                Text(
+                  'Invalid Image',
+                  style: TextStyle(
+                    fontSize: 24.sp,
+                    fontWeight: FontWeight.w800,
+                    color: Colors.red.shade700,
+                  ),
+                ),
+                SizedBox(height: 10.h),
+                Text(
+                  'The image does not appear to contain a plant leaf. Please try again with a clear leaf image.',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 18.sp,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+                SizedBox(height: 25.h),
+                Container(
+                  width: double.infinity,
+                  child: ElevatedButton.icon(
+                    onPressed: () {
+                      Navigator.pop(context);
+                      pickImage(true);
+                    },
+                    icon: Icon(
+                      Remix.camera_line,
+                      color: Colors.white,
+                      size: 20.sp,
+                    ),
+                    label: Text(
+                      'Try Again',
+                      style: TextStyle(
+                        fontSize: 16.sp,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.white,
+                      ),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.red.shade700,
+                      padding: EdgeInsets.symmetric(
+                        vertical: 12.h,
+                        horizontal: 20.w,
+                      ),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12.r),
+                      ),
+                      elevation: 3,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        );
+      },
     );
   }
 

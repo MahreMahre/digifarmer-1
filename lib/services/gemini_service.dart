@@ -62,6 +62,61 @@ class GeminiService {
     }
   }
 
+  static Future<bool> validateImageContainsLeaf(String base64Image) async {
+    try {
+      // Create a prompt for leaf validation
+      String prompt = "This is an image I want to use for plant disease detection. "
+          "Does this image contain a plant leaf? "
+          "Reply with just 'YES' if it contains a leaf, or 'NO' if not. "
+          "Please respond with only YES or NO and nothing else.";
+
+      final response = await http.post(
+        Uri.parse('$geminiAPIBaseURL$geminiAPIEndPoint?key=$geminiAPIKey'),
+        headers: {'Content-Type': 'application/json'},
+        body: jsonEncode({
+          'contents': [
+            {
+              'parts': [
+                {'text': prompt},
+                {
+                  'inline_data': {
+                    'mime_type': 'image/jpeg',
+                    'data': base64Image
+                  }
+                }
+              ],
+            },
+          ],
+          'generationConfig': {
+            'temperature': 0.1,
+            'topK': 1,
+            'topP': 0.95,
+            'maxOutputTokens': 10,
+          },
+        }),
+      );
+
+      if (response.statusCode == 200) {
+        final data = jsonDecode(response.body);
+
+        if (data['candidates'] != null && data['candidates'].isNotEmpty) {
+          final text = data['candidates'][0]['content']['parts'][0]['text'];
+          log('Gemini response for leaf validation: $text');
+          return text.toUpperCase().contains('YES');
+        } else {
+          log('No candidates found in Gemini response for leaf validation');
+          return false;
+        }
+      } else {
+        log('Gemini API Error during leaf validation: ${response.statusCode} - ${response.body}');
+        return false;
+      }
+    } catch (e) {
+      log('Error calling Gemini API for leaf validation: $e');
+      return false;
+    }
+  }
+
   static String _createPrompt({
     required String diseaseName,
     required List<String> classLabels,

@@ -1,7 +1,10 @@
+import 'dart:convert';
 import 'dart:developer';
+import 'dart:typed_data';
 import 'package:digifarmer/models/gemini_analysis_model.dart';
 import 'package:digifarmer/services/gemini_service.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 
 class GeminiProvider extends ChangeNotifier {
   bool _isAnalyzing = false;
@@ -45,6 +48,23 @@ class GeminiProvider extends ChangeNotifier {
     } finally {
       _isAnalyzing = false;
       notifyListeners();
+    }
+  }
+
+  Future<bool> validateImageContainsLeaf(Uint8List imageBytes) async {
+    try {
+      log('Starting leaf validation with Gemini');
+      
+      // Convert the image bytes to base64
+      final base64Image = base64Encode(imageBytes);
+      
+      final result = await GeminiService.validateImageContainsLeaf(base64Image);
+      
+      log('Leaf validation result: ${result ? 'Leaf detected' : 'No leaf detected'}');
+      return result;
+    } catch (e) {
+      log('Error in leaf validation: $e');
+      return false; // In case of error, we'll proceed with classification
     }
   }
 
