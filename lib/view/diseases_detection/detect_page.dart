@@ -300,7 +300,7 @@ class _DetectPageState extends State<DetectPage> {
                       ),
                       SizedBox(height: 20.h),
                       // AI Analysis Button
-                      Container(
+                      SizedBox(
                         width: double.infinity,
                         child: ElevatedButton.icon(
                           onPressed: () {
@@ -456,7 +456,7 @@ class _DetectPageState extends State<DetectPage> {
                   ),
                 ),
                 SizedBox(height: 25.h),
-                Container(
+                SizedBox(
                   width: double.infinity,
                   child: ElevatedButton.icon(
                     onPressed: () {

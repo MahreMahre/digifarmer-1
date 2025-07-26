@@ -1,4 +1,3 @@
-import 'package:digifarmer/application.dart';
 import 'package:digifarmer/firebase_options.dart';
 import 'package:digifarmer/init.dart';
 import 'package:digifarmer/provider/alert_provider.dart';
@@ -54,8 +53,8 @@ class MyApp extends StatelessWidget {
               builder: FlutterSmartDialog.init(),
               home: const WillPopScopeRoute(
                 child: Init(
-                  // child: AuthPage(),
-                  child: Application(),
+                  child: AuthPage(),
+                  // child: Application(),
                 ),
               ),
             );

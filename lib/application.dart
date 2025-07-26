@@ -7,7 +7,6 @@ import 'package:digifarmer/view/weather/weather_screen.dart';
 import 'package:digifarmer/widgets/bottom_nav_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:remixicon/remixicon.dart';
 
 class Application extends StatefulWidget {
   const Application({super.key});

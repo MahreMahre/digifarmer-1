@@ -237,7 +237,7 @@ class _HomePageState extends State<WeatherPage> {
       spacing: 2,
       children: [
         Image.asset(
-          'assets/images/weather/${imagePath}.png',
+          'assets/images/weather/$imagePath.png',
           fit: BoxFit.cover,
           height: 30.w,
           width: 30.w,

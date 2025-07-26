@@ -1,0 +1,253 @@
+{
+  "status": "ok",
+  "totalResults": 18,
+  "articles": [
+    {
+      "source": {
+        "id": "wired",
+        "name": "Wired"
+      },
+      "author": "Umair Irfan",
+      "title": "The World Is Producing More Food than Ever—but Not for Long",
+      "description": "Even America’s richest farmlands can’t outrun climate collapse. That’s everyone’s problem.",
+      "url": "https://www.wired.com/story/the-world-is-producing-more-food-than-ever-before-but-not-for-long/",
+      "urlToImage": "",
+      "publishedAt": "2025-07-26T11:00:00Z",
+      "content": "This story originally appeared on Vox and is part of the Climate Desk collaboration. Globally, humanity is producing more food than ever, but that harvest is concentrated in just a handful of breadbasket regions vulnerable to climate change. A new study warns that climate-driven droughts, heatwaves, and floods could destabilize these critical agricultural zones, risking simultaneous crop failures across multiple continents. The research highlights how interconnected and fragile the global food system has become, with just five countries—the US, Brazil, China, India, and Russia—producing 60% of the world’s calories. Scientists urge diversification of crops and farming regions to build resilience, but political and economic barriers remain. Meanwhile, farmers from Iowa to Punjab are already struggling with erratic weather, forcing difficult choices about land use and water management."
+    },
+    {
+      "source": {
+        "id": "wired",
+        "name": "Wired"
+      },
+      "author": "Lisa Wood Shapiro",
+      "title": "Plantaform Smart Indoor Garden Review: Rewarding but Risky",
+      "description": "We tested this unique indoor gardening solution that utilizes NASA technology, but air quality data raised concerns.",
+      "url": "https://www.wired.com/review/plantaform-smart-indoor-garden/",
+      "urlToImage": "https://media.wired.com/photos/6846cc404fbb2878931dbfd7/191:100/w_1280,c_limit/Review-%20Plantaform%20Smart%20Indoor%20Garden_.png",
+      "publishedAt": "2025-07-25T05:46:47Z",
+      "content": "It was about a week into my journey as a hydroponic lettuce farmer when I noticed my Mila air purifier, set to auto mode, was running at full blast. Its internal air quality sensor told me the air was thick with volatile organic compounds (VOCs)—likely from the nutrient solutions in my Plantaform Smart Garden. This $499 countertop system promises restaurant-quality greens year-round using NASA-inspired aeroponics. And it delivers: My butterhead lettuce grew astonishingly fast, with perfect ruffled leaves. But the trade-off became clear when independent lab tests revealed elevated formaldehyde levels near the unit during growth cycles. Plantaform insists its system is safe, citing USDA organic certification for its pods, but recommends ventilation. For urban farmers, it’s a sobering reminder that high-tech agriculture still comes with unknowns."
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "BBC News"
+      },
+      "author": null,
+      "title": "More than 150 farms in England caught using local water illegally",
+      "description": "Despite 141 incidents threatening environmental damage, just one farmer has been prosecuted.",
+      "url": "https://www.bbc.com/news/articles/c4g89zwlxggo",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/e53a/live/ba1e9b70-6163-11f0-9057-411bb960d45c.jpg",
+      "publishedAt": "2025-07-27T23:01:52Z",
+      "content": "Farmers often need high volumes of water abstracted from nearby rivers to keep their crops irrigated. More than 150 farms in England have been caught illegally taking too much water from rivers, lakes, and groundwater sources since 2020, according to Environment Agency data obtained by the BBC. Yet only one prosecution was pursued, with most offenders receiving warning letters. The findings come as drought warnings spread across southern England, with chalk streams—a globally rare habitat—particularly vulnerable. The National Farmers Union argues the licensing system is outdated and doesn’t account for climate pressures, but conservationists say lax enforcement is destroying ecosystems. ‘When you see trout stranded in dried-up riverbeds while sprinklers drench golf courses, something’s broken,’ says WildFish campaigner Janina Gray."
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "BBC News"
+      },
+      "author": null,
+      "title": "Will there be a drought where I live?",
+      "description": "We take a look at river, reservoir and groundwater levels after a particularly dry few months.",
+      "url": "https://www.bbc.com/news/articles/crk661074ejo",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/ec00/live/e8c273b0-569c-11f0-90cf-2db8f0b9be7b.jpg",
+      "publishedAt": "2025-07-26T23:09:18Z",
+      "content": "Mark Poynting, Jess Carr and Phil Leake. BBC Climate and Verify data journalism teams. Many reservoirs in northern England, like Lindley Wood in Yorkshire, have hit extremely low levels. If you live in southern or eastern England, drought measures are likely this summer after the driest spring since 1890. Our analysis of Environment Agency data shows groundwater levels in Kent and Sussex are lower than during the infamous 1976 drought. Water companies are preparing temporary use bans (hosepipe bans), while farmers face restrictions that could reduce harvests by 15%. The crisis isn’t uniform—Scotland and Wales have near-normal reserves—but climate models suggest these regional imbalances will worsen. ‘We’re stuck in a weather pattern that keeps diverting rain away from the southeast,’ says meteorologist Clare Nasir. The government’s drought plan, last updated in 2019, is under review as officials weigh emergency desalination projects."
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "NPR"
+      },
+      "author": "Brittney Melton",
+      "title": "DOGE's Access to Farmers' Payments Sparks Outrage",
+      "description": "The Department of Government Efficiency now monitors USDA subsidy payments, raising concerns about algorithmic bias.",
+      "url": "https://www.npr.org/2025/07/11/g-s1-77166/up-first-newsletter-texas-floods-trump-doge-usda-brazil-tariffs",
+      "urlToImage": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/8256x4644+0+430/resize/1400/quality/100/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F83%2Faf%2Fcbd806a5495abd38dac847e12fb7%2Fgettyimages-2224540285.jpg",
+      "publishedAt": "2025-07-25T11:09:24Z",
+      "content": "DOGE—the Department of Government Efficiency—has quietly gained access to the USDA’s Farmers.gov system, which processes billions in subsidies. Documents show DOGE agents can now flag payments for review based on ‘efficiency algorithms,’ worrying agricultural groups who recall the agency’s role in delaying disaster aid after Hurricane Marjorie. Small-scale farmers report unexplained payment holds, with one Iowa corn grower waiting 11 weeks for emergency drought relief. USDA Secretary Tom Vilsack claims the partnership reduces fraud, but internal memos reveal the algorithms disproportionately target diversified farms. ‘This feels like a backdoor way to defund sustainable agriculture,’ said National Farmers Union president Rob Larew."
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "NPR"
+      },
+      "author": "Jenna McLaughlin",
+      "title": "U.S. Senator Demands DOGE Be Removed from Farmer Payment Systems",
+      "description": "Sen. Tammy Baldwin calls for transparency after DOGE's AI flags Wisconsin dairy farms at triple the historic rate.",
+      "url": "https://www.npr.org/2025/07/15/nx-s1-5468585/doge-usda-farmers",
+      "urlToImage": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2500x1406+0+260/resize/1400/quality/100/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F09%2Faf%2F1138a00c4109b63a9454ceb1340e%2Fnpr-dogefarmers-spot1-fin.jpg",
+      "publishedAt": "2025-07-27T20:46:24Z",
+      "content": "Sen. Tammy Baldwin (D-WI) is demanding the USDA revoke DOGE’s access to farmer payment systems after NPR obtained documents showing the agency’s AI flagged 12% of Wisconsin dairy farms for ‘irregularities’—triple the historic average. ‘Family farms can’t afford to be collateral damage in a political experiment,’ Baldwin said at a press conference with the Wisconsin Farmers Union. The USDA acknowledged ‘glitches’ but defended the partnership, citing a 30% reduction in fraud cases. However, analysts note DOGE’s algorithms rely on outdated yield models that penalize organic rotations. One third-generation farmer, Marie Koval, had her subsidy frozen for ‘excessive crop diversity’ after planting cover crops to combat erosion."
+    },
+    {
+      "source": {
+        "id": "business-insider",
+        "name": "Business Insider"
+      },
+      "author": "Matthew S. Smith",
+      "title": "AI Weed Control Could Save Farmers Billions—If They Can Afford It",
+      "description": "Startups like Carbon Robotics deploy laser-wielding robots to zap weeds, but small farms struggle with upfront costs.",
+      "url": "https://www.businessinsider.com/ai-tools-weed-control-efficiency-farming-agriculture-2025-6",
+      "urlToImage": "https://i.insider.com/685c1ed385e81483682cbd10?width=1200&format=jpeg",
+      "publishedAt": "2025-07-26T19:55:01Z",
+      "content": "AI systems like CNNs are transforming agriculture, aiding in weed control and efficiency. Generative AI could democratize agriculture, allowing farmers to build custom tools. In California’s Central Valley, a self-driving tractor equipped with hyperspectral cameras identifies weeds with 99% accuracy, reducing herbicide use by 90%. But at $300,000 per unit, only corporate farms can afford the tech. ‘We’re creating a two-tier system,’ warns UC Davis agroecologist Dr. Amara Singh. The USDA’s new ‘Precision Ag Grants’ aim to bridge the gap, but critics say the $50 million program is a drop in the bucket for America’s 2 million farms."
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Yahoo Entertainment"
+      },
+      "author": "Samantha Hindman",
+      "title": "Farmers Sound Alarm Over Rapid Spread of Crop-Eating Insect",
+      "description": "The invasive leafhopper, resistant to pesticides, threatens wheat harvests across Europe.",
+      "url": "https://www.yahoo.com/news/farmers-sound-alarm-over-rapid-114514750.html",
+      "urlToImage": "https://s.yimg.com/ny/api/res/1.2/Q8OvHokvsaKCsG.efwZb0g--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzY7Y2Y9d2VicA--/https://media.zenfs.com/en/the_cool_down_737/ef682764a81437d278de5d132270dfa6",
+      "publishedAt": "2025-07-27T11:45:14Z",
+      "content": "A new agricultural threat is quickly spreading through Europe, and it's only a few millimeters long, according to Euractiv. Farmers in Germany are raising the alarm about the leafhopper, an invasive insect that devours cereal crops and survives winter by nesting in plant roots. First detected in France in 2021, it has now reached 12 EU countries, with wheat yields in Baden-Württemberg down 20% this year. The pest resists conventional pesticides, forcing farmers to adopt costly biocontrols like parasitic wasps. ‘This could be the next locust-level crisis,’ said EU Agriculture Commissioner Janusz Wojciechowski, urging emergency research funding."
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Yahoo Entertainment"
+      },
+      "author": "Daniel Gala",
+      "title": "US Farmers Devastated by Record Rains: 'Whole Fields Under Water'",
+      "description": "Alabama's wettest May on record leaves crops rotting and planting delayed.",
+      "url": "https://www.yahoo.com/news/us-farmers-devastated-record-setting-110038073.html",
+      "urlToImage": "https://s.yimg.com/ny/api/res/1.2/7xj9CrvF8wfa0KMRkUdRWw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA7Y2Y9d2VicA--/https://media.zenfs.com/en/the_cool_down_737/2ad8afb0abe0020d84e4ea9e362f977d",
+      "publishedAt": "2025-07-28T11:00:38Z",
+      "content": "Alabama farmers sounded the alarm after one of the wettest months of May on record left some crops rotting and others unplanted, Yellowhammer News reported. Experts warned that the disruptions were a preview of climate-driven volatility, with the USDA projecting a 15% drop in the state’s cotton harvest. ‘We’ve got farmers posting pictures of whole fields underwater,’ said Alabama Farmers Federation president Jimmy Parnell. The rains also leached nitrogen from soils, forcing expensive re-fertilization. While crop insurance will cover some losses, many smallholders lack coverage for ‘prevented planting’—when fields are too soggy to sow. ‘This isn’t a bad year; it’s the new normal,’ said Auburn University climatologist Dr. Katharine Emery."
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Indianapolis Star"
+      },
+      "author": "John Tufts, Indianapolis Star",
+      "title": "Old Farmer's Almanac Predicts Cooler Fall for Midwest",
+      "description": "The 232-year-old publication forecasts a sharp temperature drop after a scorching summer.",
+      "url": "https://www.indystar.com/story/news/local/2025/07/23/old-farmers-almanac-fall-2025-forecast-midwest-indiana-noaa-national-weather-service-when-is-fall/85321461007/",
+      "urlToImage": "https://s.yimg.com/ny/api/res/1.2/6qpwXW0Jf9rw3iWZkyN3Og--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzU7Y2Y9d2VicA--/https://media.zenfs.com/en/indystar-the-indianapolis-star/f684dff11a3c88d156ec1391197342af",
+      "publishedAt": "2025-07-23T11:19:48Z",
+      "content": "The Old Farmer’s Almanac, known for its 80% accuracy rate, predicts a colder-than-average fall for the Midwest following this summer’s heatwaves. Farmers should prepare for an early frost in late September, potentially shortening the growing season for soybeans and late corn varieties. The shift aligns with NOAA’s La Niña watch, which often brings polar air southward. ‘This could be a repeat of 2020, when frost hit before Halloween,’ said Purdue University agronomist Dr. Lisa Volk. The Almanac also warns of erratic rainfall, suggesting farmers invest in moisture sensors to optimize irrigation before the freeze."
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "BBC News"
+      },
+      "author": null,
+      "title": "Forgotten 'Weeds' Become Culinary Hit in Kenya",
+      "description": "Indigenous greens like mrenda and managu gain popularity despite seed-sharing bans.",
+      "url": "https://www.bbc.com/news/articles/cjdzm88l8y0o",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/fc7d/live/1b6e7d70-63e2-11f0-89ea-4d6f9851f623.jpg",
+      "publishedAt": "2025-07-25T01:17:22Z",
+      "content": "Basillioh Rukanga. Once dismissed as ‘poor man’s food,’ indigenous leafy vegetables like mrenda (jute mallow) and managu (African nightshade) are now staples in Nairobi’s upscale restaurants. These drought-resistant plants contain up to 10 times more iron and calcium than cabbage, but Kenya’s 2012 Seed Act criminalizes the traditional practice of swapping seeds—a law meant to protect commercial breeders that now threatens biodiversity. ‘My grandmother’s seed varieties are disappearing because we can’t share them,’ said smallholder Wanjiku Mwangi. NGOs are lobbying for reforms, noting that 60% of Kenya’s farmland now grows just three crops: maize, beans, and kale."
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "BBC News"
+      },
+      "author": null,
+      "title": "Zimbabwe's Land Reform: 25 Years Later",
+      "description": "Some white farmers accept compensation, while others fight on in courts.",
+      "url": "https://www.bbc.com/news/articles/c3d15lx10k1o",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/be7e/live/df38cb90-5120-11f0-a2ff-17a82c2e8bc4.jpg",
+      "publishedAt": "2025-07-26T09:27:53Z",
+      "content": "Shingai Nyoka. A quarter-century after Zimbabwe’s chaotic land reforms displaced 4,000 white farmers, the government has paid $125 million in compensation to 300 families—a fraction of the $3.5 billion owed. The payments, funded by a 1% tax on corporate profits, aim to settle claims for infrastructure (not land itself, which remains state-owned). But former tobacco grower Brian James refuses to sign: ‘They want me to absolve them of theft.’ Meanwhile, critics note that most redistributed farms now lie fallow, with tobacco production—once Zimbabwe’s top export—still 40% below 2000 levels. ‘The tragedy isn’t who owns the land, but that we’ve lost the knowledge to work it,’ said agricultural economist Mandivamba Rukuni."
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Scientific American"
+      },
+      "author": "Meghan Bartels",
+      "title": "Bird Flu Lingers in US Cattle Despite Drop in Headlines",
+      "description": "The virus has been detected in 137 dairy herds across 12 states, with new human cases reported.",
+      "url": "https://www.scientificamerican.com/article/bird-flu-is-out-of-the-news-but-still-circulating/",
+      "urlToImage": "https://static.scientificamerican.com/dam/m/1d8d61d69e8082ee/original/man-releases-duck.jpg?m=1752523756.221&w=1200",
+      "publishedAt": "2025-07-26T13:00:00Z",
+      "content": "For months, bird flu was seemingly everywhere in the U.S.: news headlines reported the highly pathogenic H5N1 avian influenza virus was rapidly sweeping through hundreds of herds of dairy cattle and had infected three farmworkers. While media attention has faded, the virus persists—now detected in 137 herds across 12 states, with two new human cases linked to Michigan dairy farms. The USDA’s voluntary testing program has drawn criticism for undercounting outbreaks, as only 20% of farms participate. ‘This isn’t over; it’s just invisible,’ said virologist Angela Rasmussen. Meanwhile, poultry farmers report mounting losses, with egg prices up 18% since May due to culls."
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "CNET"
+      },
+      "author": "Jesse Orrall",
+      "title": "Dyson Unveils Futuristic Rotating Farm Design",
+      "description": "The vacuum company's agritech division proposes vertical farms with sunlight-sharing rotating rows.",
+      "url": "https://www.cnet.com/science/biology/dyson-reveals-futuristic-farming-vision/",
+      "urlToImage": "https://www.cnet.com/a/img/resize/c4d44d8c5c905c5b82dba824b436ca68b37e4dbf/hub/2025/07/11/36f07a64-0bc0-44da-b2e4-db990cdf2cb2/vertical-farm-2.jpg?auto=webp&fit=crop&height=675&width=1200",
+      "publishedAt": "2025-07-27T00:38:19Z",
+      "content": "Dyson, better known for vacuums and hair dryers, has unveiled a radical circular farm design where rows of strawberry plants rotate to share sunlight, robots handle harvesting, and AI adjusts nutrient mixes in real time. The prototype—tested at Dyson’s UK research campus—claims to yield 30% more fruit per acre than traditional greenhouses while using 90% less water. But with an estimated $2 million startup cost per unit, critics question scalability. ‘It’s brilliant engineering, but can it feed a family in Nairobi?’ asked UN Food Systems advisor Dr. Samuel Nderitu. Dyson argues the tech could revolutionize urban agriculture, with plans to trial a smaller version in Singapore next year."
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Science Daily"
+      },
+      "author": null,
+      "title": "Ancient Andean Farming Emerged Without Crisis, Study Finds",
+      "description": "Agriculture in the Andes developed gradually as a supplement to hunting, not due to scarcity.",
+      "url": "https://www.sciencedaily.com/releases/2025/06/250625232202.htm",
+      "urlToImage": "https://www.sciencedaily.com/images/1920/archaeological-sites-kaillachuro-and-jiskairumoko.webp",
+      "publishedAt": "2025-07-26T10:55:10Z",
+      "content": "In the Andes, the rise of agriculture to replace foraging was not the result of hardship and resource scarcity, but instead a time of economic resilience and innovation, according to a study published in Science. Analyzing 15,000-year-old plant remains from Peru, archaeologists found that ancient peoples gradually domesticated potatoes and quinoa while still hunting wild deer and gathering berries—a ‘slow transition’ lasting millennia. ‘They weren’t forced into farming; they curated it,’ said lead author Dr. Maria Bruno. The findings challenge the ‘Neolithic Revolution’ narrative, showing how climate-stable regions could develop agriculture without catastrophe."
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Food52.com"
+      },
+      "author": "Julia Youman",
+      "title": "5 Meals to Make With Your Farmers Market Haul",
+      "description": "Summer produce shines in these easy, seasonal recipes.",
+      "url": "https://food52.com/blog/28855-forkcast-farmers-markert-meal-plan",
+      "urlToImage": "https://images.food52.com/21q5Ikfxm4ogTdwJ9n-zBt4qoaA=/fit-in/1200x1200/973d3445-12be-4320-875e-9fb9d7ccf187--2019-0702_grilled-zucchini-orzo_3x2_ty-mecham_001_copy.jpg",
+      "publishedAt": "2025-07-27T16:24:56Z",
+      "content": "Welcome to Forkcast—our weekly meal plan with five recipes, a grocery list, and tips to keep dinner easy. This week’s lineup celebrates peak summer produce: grilled zucchini orzo with feta, corn and tomato galette, and a peach-caprese hybrid salad. Farmer’s market staples like heirloom tomatoes and fresh basil take center stage, with clever tricks to extend their shelf life (hint: store tomatoes stem-down at room temperature). We’ve also included a zero-waste pesto made from carrot tops and a blueberry-mint shrub syrup for cocktails. ‘Summer cooking should be joyful, not sweaty,’ says contributor Christen Vidanovic, who swears by pre-chopping veggies during cooler morning hours."
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Thekitchn.com"
+      },
+      "author": "Lauren Miyashiro",
+      "title": "The Best Way to Wash and Store Strawberries",
+      "description": "A food scientist explains how to prevent mold and extend berry freshness.",
+      "url": "https://www.thekitchn.com/best-way-wash-store-strawberries-23732298",
+      "urlToImage": "https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_1500,ar_3:2/k%2FPhoto%2FSeries%2F2020-06-skills-showdown-storing-berries%2FKitchn_SkillsBattleHowToStoreBerries_354",
+      "publishedAt": "2025-07-28T14:00:00Z",
+      "content": "We go through a lot of fruit in my household (who doesn’t in summer?), so I tested every strawberry storage hack to find the winner. The key? A vinegar rinse (1 part white vinegar to 3 parts water) kills mold spores, followed by thorough drying in a salad spinner. Store them in a single layer on paper towels in an airtight container, and they’ll last up to 10 days—twice as long as unwashed berries. ‘The real enemy is moisture, not air,’ explains UC Davis food scientist Dr. Diane Barrett. For frozen berries, toss them in sugar syrup before freezing to preserve texture. Pro tip: Never remove stems until after washing to prevent waterlogged berries."
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Thekitchn.com"
+      },
+      "author": "Christin Perry",
+      "title": "How to Plant Cherry Seeds in 4 Simple Steps",
+      "description": "Grow your own cherry tree from pits with this gardener-approved method.",
+      "url": "https://www.thekitchn.com/how-to-plant-cherry-seeds-23732615",
+      "urlToImage": "https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_1500,ar_3:2/tk%2Fphoto%2F2025%2F06-2025%2F2025-06-how-to-pit-cherries%2Fhow-to-pit-cherries-268",
+      "publishedAt": "2025-07-27T13:45:00Z",
+      "content": "One of the best parts of summer is cherry season, and with a little patience, you can grow your own tree from the pits. Start by cleaning and stratifying the seeds (a fancy term for cold treatment) in damp sand inside your fridge for 10-12 weeks. Once sprouted, plant them in well-draining soil with the root tip down. ‘Most store-bought cherries are hybrids, so don’t expect identical fruit,’ warns horticulturist Linda Ly. It takes 7-10 years for a seed-grown tree to bear fruit, but the wait pays off—homegrown cherries often outperform commercial varieties in flavor. For faster results, graft a cutting onto dwarf rootstock."
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Boston Globe"
+      },
+      "author": null,
+      "title": "Amish Farms May Hold the Key to Reducing Allergies",
+      "description": "Exposure to farm animals in early childhood correlates with lower asthma rates, study finds.",
+      "url": "https://www.bostonglobe.com/2025/07/20/nation/allergies-seem-nearly-impossible-avoid-unless-youre-amish/",
+      "urlToImage": "https://bostonglobe-prod.cdn.arcpublishing.com/resizer/v2/3ACUZQXLUBTBF23MMDP7DD552M.jpg?auth=513be519e8c0631a42984b72c3f7d30f7919ab8303b96d0c9cf3e58bcaec1e0f&width=1440",
+      "publishedAt": "2025-07-26T21:54:16Z",
+      "content": "Generally, across the country, about 8 to 10 percent of kids have asthma. In the Amish kids, it’s probably 1 to 2 percent, said Carole Ober, chair of human genetics at the University of Chicago. A 15-year study of Amish and non-Amish families in Indiana found that children raised on traditional dairy farms had 50% fewer allergies and asthma—a phenomenon linked to exposure to diverse microbes in barns. The research builds on the ‘hygiene hypothesis,’ suggesting that overly sanitized environments impair immune development. While no one recommends abandoning modern medicine, the findings could inspire new probiotics or farm-based preschool programs. ‘We’re not saying everyone should milk cows,’ Ober clarified, ‘but maybe we need to rethink bubble-wrapping kids.’"
+    }
+  ]
+}

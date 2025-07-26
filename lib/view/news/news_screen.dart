@@ -2,7 +2,6 @@ import 'package:digifarmer/provider/network_checker_provider.dart';
 import 'package:digifarmer/provider/news_provider.dart';
 import 'package:digifarmer/view/news/controller/pagination_scroll_control.dart';
 import 'package:digifarmer/view/news/news_detail_screen.dart';
-import 'package:digifarmer/widgets/animation.dart';
 import 'package:digifarmer/widgets/no_internet.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
