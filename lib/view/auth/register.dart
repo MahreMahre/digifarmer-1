@@ -33,17 +33,32 @@ class _RegisterPageState extends State<RegisterPage> {
 
     try {
       if (passwordController.text == confirmPasswordController.text) {
-        final result = await FirebaseAuth.instance
-            .createUserWithEmailAndPassword(
-              email: usernameController.text,
-              password: passwordController.text,
-            );
+        await AuthService().registerWithEmailAndPassword(
+          usernameController.text,
+          passwordController.text,
+        );
+        // If we get here, Firebase registration was successful
+        Navigator.pop(context); // Dismiss progress indicator on success
       } else {
         Navigator.pop(context);
         wrongCredentialMessage('Passwords do not match');
+        return;
       }
-    } on FirebaseAuthException {
-      wrongCredentialMessage('Invalid Email');
+    } on FirebaseAuthException catch (e) {
+      Navigator.pop(context);
+      if (e.code == 'email-already-in-use') {
+        wrongCredentialMessage('Email already in use');
+      } else if (e.code == 'invalid-email') {
+        wrongCredentialMessage('Invalid Email');
+      } else if (e.code == 'weak-password') {
+        wrongCredentialMessage('Password is too weak');
+      } else {
+        wrongCredentialMessage('Registration failed');
+      }
+      return;
+    } catch (e) {
+      print("Error during registration: $e");
+      // Don't show backend errors to user, just log them
     }
   }
 
@@ -55,6 +70,8 @@ class _RegisterPageState extends State<RegisterPage> {
         return 'Sign up to create an account';
       case 'Invalid Password':
         return 'Invalid Password';
+      case 'Email already in use':
+        return 'This email is already registered';
       default:
         return 'An error occurred';
     }
@@ -66,11 +83,9 @@ class _RegisterPageState extends State<RegisterPage> {
       builder:
           (context) => AlertDialog(
             surfaceTintColor: Colors.grey[300]!,
+            backgroundColor: Colors.white,
             title: Text(message),
-            content:
-                message == 'Invalid Email'
-                    ? const Text('Please enter a valid email')
-                    : const Text('Please enter a valid password'),
+            content: Text(errorMessageContent(message)),
             actions: [
               TextButton(
                 onPressed: () {
@@ -146,8 +161,23 @@ class _RegisterPageState extends State<RegisterPage> {
                   ),
                   SizedBox(height: 25.h),
                   SquareTile(
-                    onTap: () {
-                      AuthService().signInWithGoogle();
+                    onTap: () async {
+                      showDialog(
+                        context: context,
+                        builder:
+                            (context) => Center(
+                              child: CircularProgressIndicator(
+                                color: Colors.blue[300]!,
+                              ),
+                            ),
+                      );
+                      try {
+                        await AuthService().signInWithGoogle();
+                      } catch (e) {
+                        // Handle Firebase errors here
+                        print("Error during Google Sign-In: $e");
+                        Navigator.pop(context);
+                      }
                     },
                     imgUrl: 'assets/images/auth/google.png',
                   ),

@@ -30,7 +30,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(
       SystemUiOverlayStyle.light.copyWith(
-        statusBarColor: Color(0xFF11723D),
+        statusBarColor: const Color(0xFF2E7D32),
         statusBarBrightness: Brightness.dark,
         statusBarIconBrightness: Brightness.dark,
         systemNavigationBarColor: Colors.transparent,
@@ -116,7 +116,7 @@ Widget _greetings(BuildContext context) {
     width: appWidth(context),
     padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
     decoration: BoxDecoration(
-      color: context.color.primary,
+      color: const Color(0xFF2E7D32),
       borderRadius: BorderRadius.only(
         bottomLeft: Radius.circular(R.kR20),
         bottomRight: Radius.circular(R.kR20),

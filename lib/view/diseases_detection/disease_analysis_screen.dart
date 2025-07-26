@@ -122,7 +122,7 @@ class _DiseaseAnalysisScreenState extends State<DiseaseAnalysisScreen>
       ],
       flexibleSpace: FlexibleSpaceBar(
         title: Text(
-          'AI Analysis',
+          'Analysis & result',
           style: GoogleFonts.poppins(
             color: Colors.white,
             fontSize: 20.sp,

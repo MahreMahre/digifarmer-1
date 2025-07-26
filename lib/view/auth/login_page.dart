@@ -36,10 +36,11 @@ class _LoginPageState extends State<LoginPage> {
     displayCircularProgress();
 
     try {
-      final result = await FirebaseAuth.instance.signInWithEmailAndPassword(
-        email: usernameController.text,
-        password: passwordController.text,
+      await AuthService().signInWithEmailAndPassword(
+        usernameController.text,
+        passwordController.text,
       );
+      // If we get here, Firebase auth was successful
     } on FirebaseAuthException catch (e) {
       if (e.code == 'user-not-found') {
         // User not found
@@ -53,6 +54,9 @@ class _LoginPageState extends State<LoginPage> {
       } else if (e.code == 'invalid-credential') {
         wrongCredentialMessage('User not found');
       }
+    } catch (e) {
+      print("Error during sign in: $e");
+      // Don't show backend errors to user, just log them
     }
     Navigator.pop(context);
   }
