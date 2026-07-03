@@ -1,4 +1,4 @@
-
+<!-- 
 <p align="center">
   <img alt="Preview" src="./README/preview/preview.png">
 </p>
@@ -102,4 +102,4 @@ You can download the latest version of the APK from the link below:
 > Flutter official website: [https://flutter.dev/](https://flutter.dev/)
 > Packages (original site): [https://pub.dev/](https://pub.dev/)
 
-
+ -->
